@@ -1,8 +1,6 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        int n=nums.size();
-        vector<int> a(n);
         int k=0;
         int x=0;
         for(int i=0;i<nums.size();i++){
@@ -12,12 +10,9 @@ public:
                 }
             }
             if(x==0){
-                a[k]=nums[i];
+                nums[k]=nums[i];
                 k++;
             } x=0;
-        }
-        for(int i=0;i<k;i++){
-            nums[i]=a[i];
         }
         return k;
     }
