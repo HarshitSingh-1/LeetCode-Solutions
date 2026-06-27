@@ -7,6 +7,7 @@ public:
             for(int j=i+1;j<nums.size();j++){
                 if(nums[i]==nums[j]){
                     x=1;
+                    break;
                 }
             }
             if(x==0){
